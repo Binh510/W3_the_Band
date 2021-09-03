@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+.text-white{
+    color: white !important;
+}
 
 html{
     font-family: Arial, Helvetica, sans-serif;
@@ -123,10 +126,91 @@ position: relative;
     font-weight: 600;
 }
 
-/* #content{
+#content{
 
-} 
+}
+
+ #content .content__section{
+    width: 800px;
+    margin: auto;
+    padding: 64px 0;
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+#content .section-sub-heading{
+    display: block;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+#content .about-text{
+    text-align: justify;
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.4em;
+}
+
+#content .img-container{
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#content .member-item .member-name{
+    text-align: center;
+    padding: 15px 0;
+}
+
+#content .member-item img{
+    width: 154px;
+    border-radius: 4px;
+}
+/* Tour section */
+.tour-section{
+    background-color: #000;
+}
+.tour-section .book-ticket{
+    background-color: #fff;
+    list-style-type: none;
+    margin-top: 24px;
+}
+.tour-section .book-ticket li{
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+}
+.sold-out{
+    padding: 3px 4px;
+    margin-left: 16px;
+    color: #fff;
+    background-color: #f44336;
+}
+.month{
+    color: #757575;
+}
+.ticket-left{
+    float: right;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    margin: -2px;
+}
+
 
 #footer{
 
-} */
+} 
