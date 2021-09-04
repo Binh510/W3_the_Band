@@ -4,6 +4,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.clear{
+    clear: both;
+}
+
 .text-white{
     color: white !important;
 }
@@ -208,6 +213,58 @@ position: relative;
     color: white;
     text-align: center;
     margin: -2px;
+}
+/* tour-place */
+.tour-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin:32px 0;
+}
+
+.tour-place{
+    width: 31%;
+}
+
+.tour-place .tour-info{
+    background-color: #fff;
+    padding:0 15px ;
+    font-size: 15px;
+}
+
+.tour-city,.tour-time,.tour-text{
+    padding: 15px 0;
+}
+.tour-city{
+font-size: 15px;
+
+}
+.tour-time{
+color: #000;
+}
+.tour-text{
+line-height: 1.5;
+}
+
+.tour-place img{
+    width:100%;
+    display: block;
+}
+.tour-place img:hover{
+    opacity: 0.6;
+}
+.tour-ticket{
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 0 16px;
+    line-height: 34px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+}
+.tour-ticket:hover{
+    background-color:#ccc;
+    color: #000;
 }
 
 
