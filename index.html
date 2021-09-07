@@ -29,14 +29,17 @@
                         </span>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
             <div class="header__search">
                 <i class="fa fa-search"></i>
+            </div>
+            <div id="menu-mobile" class="menu-mobile-btn">
+                <i class="fa fa-bars"></i>
             </div>
         </div>
 
@@ -198,7 +201,30 @@
         </div>
     </div>
 
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('menu-mobile');
+        var headerHeight = header.clientHeight;
+        // show and close menu bar when click
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+        // auto-close menu sidebar when an item was clicked
+        var menuList = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuList.length; i++) {
+            var menuItem = menuList[i];
 
+            menuItem.onclick = function () {
+                header.style.height = null;
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -46,7 +46,7 @@ a, i {
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-left: -8px;
     margin-right: -8px;
 }
@@ -71,10 +71,11 @@ html{
 
 #header{
     position: fixed;
+    top:0;
+    width: 100%;
+    justify-content: space-between;
     z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
+    display: flex;
     height: 46px;
     background-color: #000;
 }
@@ -134,16 +135,27 @@ html{
     text-decoration: none;
 }
 
-.header__search{
+.header__search,.menu-mobile-btn{
     float: right;
     height: 100%;
     min-width: 62px;
     text-align: center;
     line-height: 46px;
-}
-.header__search i{
     color: #fff;
+
 }
+.header__search i, .menu-mobile-btn i{
+    color:inherit;
+}
+.menu-mobile:hover{
+    background-color: #ccc;
+    color: #000;
+
+}
+/* .menu-mobile:hover i{
+    color: 
+} */
+
 .header__search:hover{
     background-color:#f44336;
     cursor: pointer;
@@ -188,8 +200,12 @@ position: relative;
 
  #content .content__section{
     width: 800px;
+
+    max-width: 100%;
     margin: auto;
     padding: 64px 0 94px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     font-size: 30px;
@@ -242,6 +258,8 @@ position: relative;
     margin-top: 24px;
 }
 .tour-section .book-ticket li{
+    display: flex;
+    justify-content: space-between;
     padding: 8px 16px;
     border: 1px solid #ddd;
 }
@@ -356,4 +374,28 @@ line-height: 1.5;
     opacity: 0.4;
 }
 
+/* Responsive */
+/* pc */
+@media (min-width: 1024px){
+
+}
+
+/* tablette */
+@media (max-width:1023px) and (min-width: 739px){
+
+}
+
+/* mobile */
+@media (max-width:740px){
+    #nav>li{
+        display: block;
+    }
+    #header{
+        overflow: hidden;
+        
+    }
+    .header__search{
+            display: none;
+        }
+}
 
