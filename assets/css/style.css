@@ -247,6 +247,7 @@ position: relative;
 }
 
 #content .member-item img{
+    display: block;
     width: 154px;
     border-radius: 4px;
 }
@@ -288,9 +289,10 @@ position: relative;
 /* tour-l.tour-list */
 .tour-list{
     
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 32px;
 }
+
 
 .tour-info{
     background-color: #fff;
@@ -416,6 +418,31 @@ line-height: 1.5;
     }
     .menu-mobile-btn{
         display: block;
+    }
+
+    #content .img-container{
+        flex-direction: column;
+    }
+    #content .member-item img{
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+
+    .tour-list{
+        flex-direction:column;
+    }
+    .s-col-full{
+        width: 100%;
+    }
+    
+    
+    #contact .contact-content{
+        flex-direction: column;
+    }
+    #contact .contact-content,
+    #contact .contact-info{
+        width: 100%;
     }
 }
 
