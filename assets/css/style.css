@@ -19,6 +19,7 @@
     background-color: #000;
     border: 1px solid #000;
     text-decoration: none;
+    text-align: center;
 }
 .btn:hover{
     background-color:#ccc;
@@ -40,6 +41,9 @@ a, i {
 }
 .mt-16{
     margin-top: 16px !important;
+}
+.mt-32{
+    margin-top: 32px !important;
 }
 .full-right{
     justify-content: flex-end !important;
@@ -383,14 +387,43 @@ line-height: 1.5;
 @media (min-width: 1024px){
 
 }
+/* Tablette & Mobile */
+@media (max-width:1023px){
 
+    .btn{
+        padding: 6px 16px; 
+    }
+    .contact-form .form-control {
+        padding:12px
+    }
+    #footer .socials {
+        font-size: 43px;
+    }
+    #footer .socials a{
+        margin: 0 8px;
+    }
+    .copy-right a{
+        padding: 15px 0;
+        display: inline-block;
+        
+    }
+}
 /* tablette */
 @media (max-width:1023px) and (min-width: 739px){
+    .contact-info{
+        line-height: 2;
+    }
 
 }
 
 /* mobile */
 @media (max-width:740px){
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+    .s-mt-16{
+        margin-top: 16px !important;
+    }
     #nav{
         display: block;
         width: 100%;
@@ -432,7 +465,8 @@ line-height: 1.5;
     .tour-list{
         flex-direction:column;
     }
-    .s-col-full{
+    .s-col-full,
+    .s-full-width{
         width: 100%;
     }
     
@@ -443,6 +477,9 @@ line-height: 1.5;
     #contact .contact-content,
     #contact .contact-info{
         width: 100%;
+    }
+    .contact-input{
+        flex-direction: column;
     }
 }
 
